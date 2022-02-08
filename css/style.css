@@ -1,0 +1,273 @@
+/* Custom RADIO */
+.custom-radio input, .custom-radio-final input{
+    display: none;
+  }
+
+  .custom-radio input + label:before {
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: inline-block;
+  }
+
+  .custom-radio input.check + label:before {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/3/3b/Eo_circle_green_checkmark.svg");
+    opacity: 0.5;
+    margin-left: 25px;
+  }
+
+  .custom-radio input.cross + label:before {
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/c/cc/Cross_red_circle.svg");
+    opacity: 0.5;
+    margin-right: 25px;
+  }
+
+  .custom-radio input:checked + label:before {
+    box-sizing: border-box;
+    outline: 4px solid #0069D9;
+    opacity: 1;
+  }
+
+  .custom-radio-final{
+    width: 90%;
+    padding: 0;
+    font-weight: bold;
+  }
+
+  .custom-radio-final label {
+    width: 19.67%;
+    height: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    opacity: 0.5;
+  }
+
+  .custom-radio-final label.um {
+    background-color: #ff8356;
+  }
+
+  .custom-radio-final label.dois {
+    background-color: #ffbe56;
+  }
+
+  .custom-radio-final label.tres {
+    background-color: #ffeb56;
+  }
+
+  .custom-radio-final label.quatro {
+    background-color: #e8ff56;
+  }
+
+  .custom-radio-final label.cinco {
+    background-color: #b8ff56;
+  }
+
+  .custom-radio-final label.zero {
+    width: 49.8%;
+    margin-top: 4px;
+    background-color: #ff5656;
+  }
+  .custom-radio-final label.seis {
+    width: 49.8%;
+    margin-top: 4px;
+    background-color: #56ff61;
+  }
+
+  .custom-radio-final label:hover {
+    opacity: 1;
+  }
+
+  .custom-radio-final input:checked + label {
+    opacity: 1;
+    border: 2px solid #343A40;
+  }
+  .custom-radio-final label.destaque-1, .custom-radio-final label.destaque-2{
+    width: 49.6%;
+    margin-bottom: 4px;
+  }
+  .custom-radio-final label.destaque-1{
+    background-color: #44c0ed;
+  }
+  .custom-radio-final label.destaque-2{
+    background-color: #449aea;
+  }
+  .custom-radio-final label.destaque-3{
+    width: 99.4%;
+    background-color: #FF5656;
+  }
+  .custom-card, .custom-card .card-header{
+    border: 0;
+    background-color: #F5F5F5;
+  }
+  .custom-card{
+    border-top: 5px solid #44c0ed;
+  }
+
+  .custom-radio-final label.nao {
+    width: 40%;
+    margin-right: 4px;
+    background-color: #ff5656;
+    height: 70px;
+  }
+  .custom-radio-final label.sim {
+    width: 40%;
+    background-color: #56ff61;
+    height: 70px;
+  }
+  /* Custom CHECKBOX */
+
+  .custom-checkbox input{
+    display: none;
+  }
+
+  .custom-checkbox{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .custom-checkbox label {
+    width: 30%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid black;
+  }
+  .custom-checkbox .vermelho{
+    background-color: #dc3545; 
+    color: white;
+  }
+  .custom-checkbox label:hover {
+    background-color: #76e6fc;
+    color: black;
+  }
+  .custom-checkbox input:checked + label {
+    border: 2px solid #43a047;
+    background-color: #2ef778;
+    color: black;
+  }
+
+  /* Custom div */
+  .custom-div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .custom-div div {
+    width: 30%;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+    border: 2px solid #007991;
+    background-color: #76e6fc;
+    text-decoration: none;
+    color: black;
+    max-height: 200px;
+  }
+
+  /* Media */
+
+  @media only screen and (max-width: 1199px){
+  
+    .custom-radio-final label {
+      width: 19.6%;
+
+    }
+    .custom-radio-final label.zero, .custom-radio-final label.seis {
+      width: 49.75%;
+    }
+
+  }
+
+  @media only screen and (max-width: 991px){
+  
+    .custom-radio-final label {
+      width: 19.45%;
+
+    }
+    .custom-radio-final label.zero, .custom-radio-final label.seis {
+      width: 49.6%;
+    }
+
+  }
+
+  @media only screen and (max-width: 767px){
+  
+    .custom-radio-final label {
+      width: 19.2%;
+
+    }
+    .custom-radio-final label.zero, .custom-radio-final label.seis {
+      width: 49.35%;
+    }
+    .custom-radio-final label.destaque-1, .custom-radio-final label.destaque-2{
+      width: 49.35%;
+    }
+
+  }
+
+  @media only screen and (max-width: 473px){
+  
+    .custom-radio-final {
+      font-weight: normal;
+
+    }
+    .custom-radio-final label {
+      width: 19.1%;
+
+    }
+    .custom-radio-final label.zero, .custom-radio-final label.seis {
+      width: 49.25%;
+    }
+    .custom-radio-final label.destaque-1, .custom-radio-final label.destaque-2{
+      width: 99.4%;
+    }
+
+  }
+
+  @media only screen and (max-width: 423px){
+  
+    .custom-radio-final label {
+      width: 32.5%;
+    }
+    .custom-radio-final label.um, .custom-radio-final label.dois{
+      width: 49.15%;
+      margin-bottom: 4px;
+    }
+    .custom-radio-final label.zero, .custom-radio-final label.seis {
+      width: 49.15%;
+    }
+
+  }
+
+  @media only screen and (max-width: 382px){
+  
+    .custom-radio input.check + label:before, .custom-radio input.cross + label:before {
+      margin-left: 0px;
+    }
+
+    .custom-radio input + label:before {
+      width: 40px;
+      height: 40px;
+    }
+    .custom-radio-final label {
+      width: 32%;
+    }
+    .custom-radio-final label.um, .custom-radio-final label.dois{
+      width: 100%;
+      margin-bottom: 4px;
+    }
+    .custom-radio-final label.zero, .custom-radio-final label.seis {
+      width: 100%;
+    }
+
+  }
